@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Simplified base colors; dark mode handled via class */
+body { }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-md font-medium transition-colors;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply bg-gray-600 text-white hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600;
+}
+
+.btn-danger {
+  @apply bg-red-600 text-white hover:bg-red-700;
+}
+
+.btn-success {
+  @apply bg-green-600 text-white hover:bg-green-700;
+}
+
+.form-input {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+  @apply dark:bg-black dark:border-gray-700 dark:text-white dark:placeholder-gray-400;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md p-6 dark:bg-black dark:border dark:border-gray-800;
+}
+
+.note-card {
+  @apply bg-white rounded-lg shadow-md p-4 border-l-4 border-blue-500 dark:bg-black dark:border-gray-800;
+}
